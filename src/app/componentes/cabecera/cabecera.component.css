@@ -1,0 +1,116 @@
+/*Configuracion del contenedor y su contenido*/
+.contenedor {
+    border: 7px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603); 
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+  
+/*Configuracion del menu*/
+.minimalist-menu {
+    background-color: #ffffff;
+    color: #4d4c4c;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+/* Alineacion del texto e icones de los botones del menú*/
+.minimalist-menu .button-content {
+    display: flex;
+    align-items: center;
+}
+  
+/* Distancia horizontal y Vertical de los Iconos*/
+.minimalist-menu .mat-icon {
+    margin-right: 3px;
+    margin-top: -3px;
+}
+  
+/* Tamaño vertical/horizontal de los botones del menú*/
+.minimalist-menu .button-text {
+    line-height: 35px;
+    padding: auto;
+}
+
+/* Espacio horizontal entre los botones del menú*/
+.mat-button-toggle,button.mat-menu-trigger {
+  margin-left: -1px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////*/
+
+.encabezadoLateral {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603); 
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #879fe2;
+    
+}
+
+#logoLocal{
+    
+    width: 80px;
+    position: relative;
+    left: -85px;
+    top: 1px;
+    
+}
+
+.sidebar {
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);  
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #4f77e4;
+}
+
+
+
+
+
+/*
+Configuracion individual de los botones del menu: 
+tamaño horizontal, vertical etc
+
+#Movimientos{ 
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
+#Inventario{
+    padding: 7px 12px;
+}
+
+#Proveedores{
+    padding: 7px 12px;
+}
+
+#Informes{
+    padding: 7px 12px;
+}
+*/
+
+
+ 
+
+  
+
+
+  
+
+
+
+  
+  

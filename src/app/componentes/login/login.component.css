@@ -1,0 +1,87 @@
+#ingreso{
+
+    position: relative;
+    top: -30px; 
+    left: 20px;
+}
+
+#login-container h1{
+
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 40px;
+
+    position: relative;
+    top: 1px;
+    left: 20px;
+
+}
+
+#login-container label{
+
+    position: relative;
+    top: 1px;
+    left: 20px;
+}
+    
+
+#login-container{
+
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    background-image: url(https://www.nicepng.com/png/full/424-4241449_fondos-azules-png.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 550px;
+    height: 340px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+} 
+
+
+#logoKS{
+    
+    width: 162px;
+    border-radius: 5px;
+    position: relative;
+    left: 315px;
+    top: -227px;
+}
+
+#seguridad{
+    
+    width: 40px;
+    border-radius: 5px;
+    position: relative;
+    left: 321px;
+    top: -104px;
+}
+
+
+#cedula {
+    width: 225px;
+    position: relative;
+    top: 1px;
+    left: 20px;
+}
+
+#clave {
+    width: 225px;
+    position: relative;
+    top: 1px;
+    left: 20px;
+}
+
+
+
+  
+
+
+  

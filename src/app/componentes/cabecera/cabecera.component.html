@@ -1,0 +1,71 @@
+<header>
+  
+  <div class="contenedor">
+
+    <mat-button-toggle class="minimalist-menu" id="Inicio">
+      <div class="button-content">
+        <mat-icon>home</mat-icon>
+        <span class="button-text">Inicio</span>
+      </div>
+    </mat-button-toggle>
+
+
+    <button mat-button [matMenuTriggerFor]="menu2" class="minimalist-menu" id="Movimientos">
+      <div class="button-content"><mat-icon>swap_vert</mat-icon><span class="button-text">Movimientos</span></div>
+    </button>
+    
+    <mat-menu #menu2="matMenu" class="minimalist-menu">
+
+      <div *ngFor="let item of menuItems">
+        <button mat-menu-item [routerLink]="item.path">{{item.label}}</button>
+      </div>
+        
+    </mat-menu>
+
+      
+    <mat-button-toggle class="minimalist-menu" id="Inventario">
+      <div class="button-content">
+        <mat-icon>storage</mat-icon>
+        <span class="button-text">Inventario</span>
+      </div>
+    </mat-button-toggle>
+      
+
+    <mat-button-toggle class="minimalist-menu" id="Proveedores">
+      <div class="button-content">
+        <mat-icon>group</mat-icon>
+        <span class="button-text">Proveedores</span>
+      </div>
+    </mat-button-toggle>
+
+
+    <mat-button-toggle class="minimalist-menu" id="Informes">
+      <div class="button-content">
+        <mat-icon>assessment</mat-icon>
+        <span class="button-text">Informes</span>
+      </div>
+    </mat-button-toggle>
+
+
+    <mat-button-toggle class="minimalist-menu" id="Salir">
+      <div class="button-content">
+        <mat-icon>exit_to_app</mat-icon>
+        <span routerLink= "" class="button-text">Salir</span>
+      </div>
+    </mat-button-toggle>
+    
+  </div>
+
+
+
+
+  <div class="sidebar">
+    <header>
+        <div class="encabezadoLateral">
+            <img src= "assets/logoLocal.png" id="logoLocal" alt="">
+        </div>
+    </header>
+  </div>
+
+</header>
+  
