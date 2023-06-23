@@ -1,0 +1,50 @@
+
+.tabla-proveedores{
+    margin-top: 125px;
+    margin-left: 300px;
+    max-width: 1025px;
+    max-height: 45px;
+    width: 100%;
+}
+
+
+.tabla-proveedores h2 {
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    font-weight: bold;
+}
+
+
+  
+  
+.tabla-proveedores th {
+    background-color: #f0ecec;
+    font-weight: bold;
+}
+  
+.tabla-proveedores tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+
+.tabla-proveedores .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tabla-proveedores .input-group input {
+    margin-right: 5px;
+}
+
+
+.tabla-proveedores .input-group input button {
+    margin-left: 10px;
+    width: 46%;
+}
+
+
+  

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AppComponent } from 'src/app/app.component';
-import { VariablesUso } from 'src/app/modelos/VariablesUso';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'componente-pagina-inicio',
@@ -9,11 +9,12 @@ import { VariablesUso } from 'src/app/modelos/VariablesUso';
 })
 export class PaginaInicioComponent {
 
-  constructor(private appComponent: AppComponent) {}
+  constructor(private appComponent: AppComponent,private titleService: Title) {}
 
   ngOnInit() {
     this.appComponent.mostrarCabecera = true;
     this.appComponent.mostrarPie = true;
+    this.titleService.setTitle('KiloSystem');
   }
 
 }

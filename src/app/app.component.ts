@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { VariablesUso } from './modelos/VariablesUso';
+
 
 
 @Component({
@@ -12,5 +12,5 @@ export class AppComponent {
 
   mostrarCabecera = false;
   mostrarPie = false;
-  
+
 }

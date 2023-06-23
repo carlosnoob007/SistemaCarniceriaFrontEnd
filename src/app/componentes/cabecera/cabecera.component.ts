@@ -8,13 +8,15 @@ import { Router } from '@angular/router';
 })
 export class CabeceraComponent {
 
+  
 
   menuItems = [
-    { path: '', label: 'Login' },
+    { path: 'Compras', label: 'Compras' },
+    { path: 'Ventas', label: 'Ventas' },
   ];
 
   isClicked = false;
-
+  
   toggleHeart() {
     this.isClicked = !this.isClicked;
   }

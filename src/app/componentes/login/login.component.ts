@@ -11,10 +11,11 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class LoginComponent {
   
-  constructor(private appComponent: AppComponent) {}
+  constructor(private appComponent: AppComponent,private titleService: Title) {}
   
   ngOnInit() {
     this.appComponent.mostrarCabecera = false;
     this.appComponent.mostrarPie = false;
-  }  
+    this.titleService.setTitle('Iniciar Sesión');
+  }
 }

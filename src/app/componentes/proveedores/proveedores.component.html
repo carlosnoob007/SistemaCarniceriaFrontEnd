@@ -1,0 +1,46 @@
+<div class="tabla-proveedores">
+    <h2>Proveedores <i class="bi bi-person-lines-fill"></i></h2>
+
+    <div class="row">
+
+      <div class="input-group">
+        <input type="text" [(ngModel)]="nombreProveedor" class="form-control form-control" placeholder="Nombre">
+        <input type="text" [(ngModel)]="direccion" class="form-control form-control" placeholder="Dirección">
+        <input type="text" [(ngModel)]="telefono" class="form-control form-control" placeholder="Teléfono">
+        <input type="text" [(ngModel)]="correoElectronico" class="form-control form-control" placeholder="E-Mail">
+        <button class="btn btn-primary" (click)="agregarProveedor()"><i class="bi bi-person-add"></i> Agregar</button>
+      </div>
+
+      <div class="col-md-12">
+        <!-- Tabla de proveedores -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 2%">ID</th>
+              <th style="width: 2.5%">Nombre</th>
+              <th style="width: 2.5%">Dirección</th>
+              <th style="width: 5%">Teléfono</th>
+              <th style="width: 5%">Correo Electronico</th>
+              <th style="width: 0.5%"></th>
+  
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí puedes agregar las filas dinámicamente con Angular -->
+
+            <tr *ngFor="let proveedores of listProveedores; let i = index">
+              <td>{{ proveedores.id }}</td>
+              <td>{{ proveedores.nombreProveedor }}</td>
+              <td>{{ proveedores.direccion }}</td>
+              <td>{{ proveedores.telefono }}</td>
+              <td>{{ proveedores.correoElectronico}}</td>
+              <td class="cursor text-danger">
+                <i class="bi bi-backspace-fill"></i>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>

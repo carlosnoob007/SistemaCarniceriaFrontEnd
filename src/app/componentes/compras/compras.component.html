@@ -1,0 +1,82 @@
+<div class="formulario-compras">
+
+  <h2>Compras <i class="bi bi-cart"></i></h2>
+
+  <form>
+
+    <div class="productos-seccion">
+
+      <div class="form-horizontal-row">
+        <label for="producto" class="form-label">Producto: </label>
+        <select id="producto" name="producto" [(ngModel)]="nuevoProducto" class="form-select">
+          <option *ngFor="let producto of productos" [value]="producto">{{ producto }}</option>
+        </select>
+
+        <label for="categoria" class="form-label">Categoría:</label>
+        <select id="categoria" name="categoria" [(ngModel)]="nuevaCategoria" class="form-select">
+          <option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria }}</option>
+        </select>
+        
+      </div>
+
+      <div class="form-horizontal-row">
+        <label for="NProducto" class="form-label">Nuevo Producto: </label>
+        <input type="text" id="NProducto" name="NProducto" class="form-control">
+
+        <label for="NCategoria" class="form-label">Nueva Categoría: </label>
+        <input type="text" id="NCategoria" name="NCategoria" class="form-control">
+      </div>
+
+      <div class="form-horizontal-row-3">
+        <label for="precio" class="form-label">Precio/Lb: $</label>
+        <input type="text" placeholder="" class="form-control"><br>
+      </div>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="compras-seccion">
+
+      <div class="form-horizontal-row-2">
+        <label for="fecha" class="form-label">Fecha de la compra:</label>
+        <input type="date" id="fecha" name="fecha" class="form-control">
+      </div>
+
+      <div class="form-horizontal-row-2">
+        <label for="cantidad" class="form-label">Cantidad Compra (Lb):</label>
+        <input type="text" id="cantidad" name="cantidad" class="form-control">
+      </div>
+
+      <div class="form-horizontal-row-2">
+        <label for="total" class="form-label">Total Compra ($):</label>
+        <input type="text" id="total" name="total" class="form-control">
+      </div>
+      
+    </div>
+
+    
+    <br>
+
+
+    <div class="proveedores-seccion">
+
+      <div class="form-horizontal-row-3">
+        <label for="proveedor" class="form-label">Proveedor:</label>
+        <select id="proveedor" name="proveedor" [(ngModel)]="nuevoProveedor" class="form-select">
+          <option *ngFor="let proveedor of proveedores" [value]="proveedor">{{ proveedor }}</option>
+        </select>
+      </div>
+
+    </div>
+
+    
+    <br>
+
+    <button (click)="guardarCompra()" id="guardar" class="btn btn-primary"><i class="bi bi-save"></i> Guardar</button>
+ 
+  </form>
+  
+</div>

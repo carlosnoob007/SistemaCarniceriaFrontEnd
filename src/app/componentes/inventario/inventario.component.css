@@ -1,0 +1,32 @@
+
+.tabla-inventario {
+    margin-top: 125px;
+    margin-left: 300px;
+    border: 2px solid #ccc;
+    max-width: 1025px;
+    max-height: 45px;
+}
+
+.tabla-inventario table {
+    width: 100%;
+}
+
+.tabla-inventario h2 {
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    font-weight: bold;
+}
+
+
+  
+  
+.tabla-inventario th {
+    background-color: #f0ecec;
+    font-weight: bold;
+}
+  
+.tabla-inventario tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+  

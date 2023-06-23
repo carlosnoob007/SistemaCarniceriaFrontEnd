@@ -1,0 +1,106 @@
+.formulario-compras {
+    font-weight: bold;
+}
+
+
+.formulario-compras h2 {
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    font-weight: bold;
+}
+
+.formulario-compras button {
+    position: absolute;
+    top: 78%;
+    left: 55%;
+}
+
+
+.productos-seccion {
+    
+    margin-left: 300px;
+    margin-top: 160px;
+}
+  
+.compras-seccion {
+    
+    margin-left: 875px;
+    margin-top: -168px;
+}
+  
+.proveedores-seccion {
+    margin-left: 300px;
+    margin-top: 25px;
+    
+}
+
+
+
+/*/////////////////////////////////////////////*/
+
+.form-horizontal-row-2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 325px;
+
+}
+
+.form-horizontal-row-2 .form-label {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+  
+/*/////////////////////////////////////////////*/
+
+
+.form-horizontal-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 510px;
+
+}
+  
+.form-horizontal-row .form-label {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.form-horizontal-row input{
+    margin-right: 1px;
+}
+
+/*/////////////////////////////////////////////*/
+
+
+.form-horizontal-row-3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 253px;
+
+}
+
+.form-horizontal-row-3 .form-label {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+
+  
+  
+
+  
+
+
+  
+  
+  
+  
+ 
+  
+  

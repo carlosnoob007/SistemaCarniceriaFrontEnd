@@ -1,0 +1,74 @@
+<div class="formulario-ventas">
+
+    <h2>Ventas <i class="fas fa-tags"></i></h2>
+  
+    <form>
+  
+      <div class="productos-seccion">
+  
+        <div class="form-horizontal-row">
+          <label for="producto" class="form-label">Producto: </label>
+          <select id="producto" name="producto" [(ngModel)]="nuevoProducto" class="form-select">
+            <option *ngFor="let producto of productos" [value]="producto">{{ producto }}</option>
+          </select>
+  
+          <label for="categoria" class="form-label">Categoría:</label>
+          <select id="categoria" name="categoria" [(ngModel)]="nuevaCategoria" class="form-select">
+            <option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria }}</option>
+          </select>
+          
+        </div>
+  
+        <div class="form-horizontal-row-3">
+          <label for="precio" class="form-label">Precio/Lb: $</label>
+          <input type="text" placeholder="" class="form-control"><br>
+        </div>
+  
+      </div>
+  
+  
+      <br>
+  
+  
+      <div class="ventas-seccion">
+  
+        <div class="form-horizontal-row-2">
+          <label for="fecha" class="form-label">Fecha de la venta:</label>
+          <input type="date" id="fecha" name="fecha" class="form-control">
+        </div>
+  
+        <div class="form-horizontal-row-2">
+          <label for="cantidad" class="form-label">Cantidad Venta (Lb):</label>
+          <input type="text" id="cantidad" name="cantidad" class="form-control">
+        </div>
+  
+        <div class="form-horizontal-row-2">
+          <label for="total" class="form-label">Total Venta ($):</label>
+          <input type="text" id="total" name="total" class="form-control">
+        </div>
+        
+      </div>
+  
+      
+      <br>
+  
+  
+      <div class="usuarios-seccion">
+  
+        <div class="form-horizontal-row-3">
+          <label for="usuario" class="form-label">Vendedor:</label>
+          <select id="usuario" name="usuario" [(ngModel)]="nuevoVendedor" class="form-select">
+            <option *ngFor="let vendedor of vendedores" [value]="vendedor">{{vendedor}}</option>
+          </select>
+        </div>
+  
+      </div>
+  
+      
+      <br>
+  
+      <button (click)="guardarCompra()" id="guardar" class="btn btn-primary"><i class="bi bi-save"></i> Guardar</button>
+   
+    </form>
+    
+  </div>
