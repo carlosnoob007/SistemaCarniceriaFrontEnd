@@ -1,0 +1,88 @@
+<div class="container">
+  <h2><i class="bi bi-journal-text"></i> Informes</h2>
+
+  <div class="form-group">
+    <label class="informe" for="tipoInforme">Tipo de informe:</label>
+    <select class="form-control" id="tipoInforme">
+      <option value="ventas">Ventas</option>
+      <option value="compras">Compras</option>
+      <option value="inventario">Inventario</option>
+      <option value="proveedores">Proveedores</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="filtro">Filtrar por:</label>
+    <select class="form-control" id="filtro" [(ngModel)]="filtro">
+      <option value="fecha">Fecha</option>
+      <option value="producto">Producto</option>
+      <option value="proveedor">Proveedor</option>
+    </select>
+  </div>
+
+  <div class="form-group" *ngIf="filtro === 'fecha'">
+    <label for="fechaInicial">Fecha inicial:</label>
+    <input type="date" class="form-control" id="fechaInicial">
+
+    <label for="fechaFinal">Fecha final:</label>
+    <input type="date" class="form-control" id="fechaFinal">
+  </div>
+
+  <div class="form-group" *ngIf="filtro === 'producto'">
+    <label for="seleccion">Seleccionar producto(s):</label>
+    <select multiple class="form-control" id="seleccion" [(ngModel)]="productosSeleccionados">
+      <option *ngFor="let producto of productos" [value]="producto">{{ producto }}</option>
+    </select>
+  </div>
+
+  <div class="form-group" *ngIf="filtro === 'proveedor'">
+    <label for="seleccion">Seleccionar proveedor(es):</label>
+    <select multiple class="form-control" id="seleccion" [(ngModel)]="proveedoresSeleccionados">
+      <option *ngFor="let proveedor of proveedores" [value]="proveedor">{{ proveedor }}</option>
+    </select>
+  </div>
+
+  <button class="btn btn-primary mt-4" (click)="generarInforme()">Generar informe</button>
+
+  <div class="informe-list mt-4">
+    <h4>Informes disponibles:</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Fecha</th>
+          <th>Tipo de informe</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let informe of informes">
+          <td>{{ informe.nombre }}</td>
+          <td>{{ informe.fecha }}</td>
+          <td>{{ informe.tipo }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="abrirInforme(informe.url)">Abrir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Modal para mostrar el PDF -->
+  <div class="modal fade" id="informeModal" tabindex="999" role="dialog" aria-labelledby="informeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="informeModalLabel">Informe PDF</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe [src]="informeUrl" style="width: 100%; height: 500px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
