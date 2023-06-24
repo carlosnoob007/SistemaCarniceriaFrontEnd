@@ -1,0 +1,10 @@
+.container {
+  position: absolute;
+    top: 10%;
+    left: 22%;
+    font-weight: bold;
+}
+
+.informe {
+  font-weight: bold;
+}
